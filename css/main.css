@@ -83,7 +83,7 @@ body {
 .rover-header-right-mobile img {
   margin: 13px 15px 13px 0;
   padding: 9px 10px;
-  border: 1px solid #cfd7de;
+  border: 1px solid #acbcca;
   border-radius: 4px;
   color: #14a96d;
 }
@@ -142,21 +142,52 @@ body {
   border: 1px solid #0a5738;
   border-radius: 4px;
   color: white;
-  padding: 15px;
-  width: 300px;
+  width: 250px;
+  padding: 15px 0px;
   text-align: center;
   margin-left: 20px;
 }
-.rover-cta-mobile {
+
+
+
+@media (max-width: 600px){
+.rover-cta{
   display: none;
 }
+}
+
+
+@media (min-width: 600px){
+   .rover-cta-mobile{
+    display: none;
+  }
+}
+
 .rover-middle-section h2{
  text-align: center;
 }
 
-.rover-mobile-hero-container{
+
+
+/* Mobile hero */
+
+.rover-mobile-hero {
+  min-width: 0;
+  max-width: 100%;
+}
+.rover-mobile-hero-container {
   display: none;
 }
+
+@media (max-width:600px) {
+  .rover-mobile-hero-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+}
+
 
 .rover-two-boxes-container{
   display: grid;
@@ -218,18 +249,18 @@ text-align: center;
   background-image: url("../img/lady-with-her-dogs.jpg");
   background-position: center top;
   background-size: cover;
-  position: relative;
-  z-index: 1;
   margin-top: 30px;
 }
+
+
 .rover-action-quote-container{
 background-color: white;
-margin-right: 600px;
-margin-left: 200px;
+width: 200px;
+height: 200px;
+margin-left: 80px;
 text-align: center;
 padding: 50px 10px;
 border: 1px solid rgb(182, 182, 182);
-float: left;
 }
 .rover-quote span{
   font-size: 30px;
